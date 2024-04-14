@@ -1,0 +1,140 @@
+      <!DOCTYPE html>
+      <html lang="pt-BR">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fundo Cinza Claro</title>
+      <style>
+          body {
+              background-color: #f2f2f2;
+              margin: 0;
+              padding: 0;
+              font-family: Arial, sans-serif;
+          }
+
+          .content {
+              max-width: 800px;
+              margin: 20px auto;
+              padding: 20px;
+              background-color: #fff;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+
+          h1 {
+              color: #333;
+          }
+
+          p {
+              color: #666;
+          }
+
+        /* Estilos para a tabela */
+        .table {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+        .cell {
+            display: table-cell;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Estilos para o botão */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+        }
+        /* Estilos para os LEDs */
+        .led {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para o texto abaixo dos LEDs */
+        .label {
+            text-align: center;
+        }
+      </style>
+      </head>
+      <body>
+
+      <div class="content">
+          <h1>URPE710</h1>
+        
+      </div>
+        <div class="table">
+            <div class="row">
+                <div class="cell"><div class="label">A</div>
+                <div class="led"></div>
+
+                <div class="label">B</div>
+                <div class="led"></div></div>
+                <div class="cell"><div class="label">C</div>
+                  <div class="led"></div>
+
+                  <div class="label">D</div>
+                  <div class="led"></div></div>
+                <div class="cell"><button class="btn" onclick="animateButton(this)">Teste</button></div>
+            </div>
+            <div class="row">
+                <div class="cell">Item 3</div>
+                <div class="cell">Item 4</div>
+                <div class="cell"><button class="btn" onclick="animateButton(this)">Teste</button></div>
+            </div>
+            <div class="row">
+                <div class="cell">Item 5</div>
+                <div class="cell">Item 6</div>
+                <div class="cell"><button class="btn" onclick="animateButton(this)">Teste</button></div>
+            </div>
+            <div class="row">
+                <div class="cell">Item 7</div>
+                <div class="cell">Item 8</div>
+                <div class="cell"><button class="btn" onclick="animateButton(this)">Teste</button></div>
+            </div>
+            <div class="row">
+                <div class="cell">Item 9</div>
+                <div class="cell">Item 10</div>
+                <div class="cell"><button class="btn" onclick="animateButton(this)">Teste</button></div>
+            </div>
+        </div>
+
+        <script>
+            // Função para animar o botão quando pressionado
+            function animateButton(button) {
+                button.classList.add('btn-pressed');
+                setTimeout(function() {
+                    button.classList.remove('btn-pressed');
+                }, 100);
+            }
+        </script>
+      </body>
+      </html>
